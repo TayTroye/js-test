@@ -1,0 +1,77 @@
+.list{
+    width: 800px;
+    height: 400px;
+    list-style: none;
+    position: relative;
+    padding-left: 0px;
+}
+.item{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    font-family:'Times New Roman', Times, serif;
+    color: burlywood;
+   opacity: 0;
+   transition: all .8s;
+}
+.item.active{
+    opacity: 1;
+    z-index: 10;
+}
+.item:nth-child(1){
+    background:url(spring.jpg);
+    background-size: 100% 100%;
+ 
+}
+.item:nth-child(2){
+    background:url(summer.jpg);
+    background-size: 100% 100%;
+ 
+}
+.item:nth-child(3){
+    background:url(autumn.jpg);
+    background-size: 100% 100%;
+ 
+}
+.item:nth-child(4){
+    background:url(winter.jpg);
+    background-size: 100% 100%;
+ 
+}
+.btn{position: absolute;
+    top:150px;
+    z-index: 100;
+    width: 100px;
+  
+}
+#gonext{
+   right: 0px;
+}
+  .pointlist{
+     padding-left: 0px;
+     list-style: none;
+     position: absolute;
+     left: 600px;
+    top: 350px;
+    z-index: 100;
+  }
+.point{
+   width: 8px;
+   height: 8px;
+   background-color: cornflowerblue;
+ border-radius: 100%;
+ float:left;
+ margin-left: 13px;
+ border:2px solid white;
+
+}
+.point:hover{
+   background-color: rgb(243, 149, 149);
+   width: 8px;
+   height: 8px;
+}
+.point.active{
+   background-color: white;
+   z-index: 100;
+}
